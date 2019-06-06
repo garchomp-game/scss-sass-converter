@@ -1,3 +1,26 @@
 手順１：gem(sass)がインストールされていることを確認してください
-手順２：一括でscssからsassに変換したいscssフォルダーをconvert.rbと同じ階層においてください
+手順２：一括でscssからsass。またはsassからscssに変換したいscssフォルダーをconvert.rbと同じ階層にsrcフォルダーとしておいてください
 手順３：convert.rbを実行すると一括変換されます
+
+例：
+src/
+  app.scss
+  component/
+    button.scss
+の場合、実行後は
+sass/
+  app.sass
+  component/
+    button.sass
+ができます。
+また、
+src/
+  app.sass
+  component/
+    button.sass
+だった場合
+scss/
+  app.scss
+  component/
+    button.scss
+ができます。
